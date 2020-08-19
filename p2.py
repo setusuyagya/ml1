@@ -4,7 +4,7 @@ data=[]
 temp=[]
 gen=['?','?','?','?','?','?']
 sef=[]
-with open('C:/Users/Setu Suyagya/Downloads/Data Sets/sp.csv') as csv_file:
+with open('C:/Users/Setu Suyagya/Downloads/sp.csv') as csv_file:
     fd = csv.reader(csv_file)
     print("\nThe given training examples are:")
     for line in fd:

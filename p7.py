@@ -19,7 +19,9 @@ heartDisease.columns
 
 from pgmpy.models import BayesianModel
 from pgmpy.estimators import MaximumLikelihoodEstimator, BayesianEstimator
-model = BayesianModel([('age', 'trestbps'), ('age', 'fbs'), ('sex', 'trestbps'), ('sex', 'trestbps'), ('exang', 'trestbps'),('trestbps',' pred_attribute '),('fbs',' pred_attribute '),(' pred_attribute ', 'restecg'),(' pred_attribute ','thalach'),(' pred_attribute ','chol')])
+model = BayesianModel([('age', 'trestbps'), ('age', 'fbs'), ('sex', 'trestbps'), ('sex', 'trestbps'), 
+                       ('exang', 'trestbps'),('trestbps',' pred_attribute '),('fbs',' pred_attribute '),
+                       (' pred_attribute ', 'restecg'),(' pred_attribute ','thalach'),(' pred_attribute ','chol')])
 model.fit(heartDisease, estimator=MaximumLikelihoodEstimator)
 print(model.get_cpds('age'))
 print(model.get_cpds('chol'))

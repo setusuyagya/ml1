@@ -17,6 +17,7 @@ bh=np.random.uniform(size=(1,hidden_neurons))
 wout=np.random.uniform(size=(hidden_neurons,output_neurons))
 bout=np.random.uniform(size=(1,output_neurons))
 for i in range(epoch):
+    h_ip=np.dot(X,wh) + bh 
     h_act = sigmoid(h_ip) 
     o_ip=np.dot(h_act,wout) + bout
     output = sigmoid(o_ip)

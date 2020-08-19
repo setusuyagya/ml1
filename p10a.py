@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 def local_regression(x0,x,y,tau):
     x0=[1,x0]
@@ -16,5 +15,5 @@ def draw(tau):
 x=np.linspace(-3,3,num=1000)
 domain=x
 y=np.log(np.abs(x**2-1)+0.5)
-draw(1000777)
-draw(01.1)
+draw(100)
+draw(0.1)
