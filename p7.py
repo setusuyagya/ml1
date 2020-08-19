@@ -3,10 +3,11 @@ import matplotlib.pyplot as plt # Visuals
 import seaborn as sns
 import sklearn as skl
 import pandas as pd
-heartDisease = pd.DataFrame(data=pd.read_csv('C:/Users/Setu Suyagya/Downloads/Data Sets/HeartDisease.csv'))
+heartDisease = pd.DataFrame(data=pd.read_csv('C:/Users/Setu Suyagya/Downloads/HeartDisease.csv'))
 heartDisease.head(5)
 np.set_printoptions(threshold=np.nan)
 heartDisease.head()
+np.set_printoptions(threshold=np.nan)
 del heartDisease['ca']
 del heartDisease['slop']
 del heartDisease['thal']
